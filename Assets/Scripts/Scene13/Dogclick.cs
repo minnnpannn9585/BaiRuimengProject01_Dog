@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PhotoClick : MonoBehaviour
+public class Dogclick : MonoBehaviour
 {
-    public GameObject bigphoto;
+    public GameObject picturedog;
     private void OnMouseDown()
     {
-        bigphoto.SetActive(true);
+        picturedog.SetActive(true);
     }
 }

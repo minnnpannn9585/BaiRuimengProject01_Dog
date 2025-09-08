@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PhotoClick : MonoBehaviour
+public class ClickToLoadLevel : MonoBehaviour
 {
-    public GameObject bigphoto;
+    public string sceneName;
     private void OnMouseDown()
     {
-        bigphoto.SetActive(true);
+        SceneManager.LoadScene(sceneName);
     }
 }

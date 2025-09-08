@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PhotoClick : MonoBehaviour
+public class Click1 : MonoBehaviour
 {
-    public GameObject bigphoto;
+    public GameObject oneopen;
+
     private void OnMouseDown()
     {
-        bigphoto.SetActive(true);
+        this.gameObject.SetActive(false);
+        oneopen.SetActive(true);
     }
+
 }
