@@ -327,8 +327,8 @@ GameObject:
   m_Component:
   - component: {fileID: 229879818}
   - component: {fileID: 229879819}
-  - component: {fileID: 229879821}
   - component: {fileID: 229879820}
+  - component: {fileID: 229879821}
   - component: {fileID: 229879822}
   m_Layer: 0
   m_Name: dog
@@ -336,7 +336,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &229879818
 Transform:
   m_ObjectHideFlags: 0
