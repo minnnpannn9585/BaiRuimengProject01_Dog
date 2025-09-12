@@ -8,7 +8,7 @@ public class DogClick14 : MonoBehaviour
 
     private void OnMouseDown()   
     {
-        transform.parent.GetComponent<Animator>().SetTrigger("Walk");
+        transform.GetComponent<Animator>().SetTrigger("Walk");
         StartCoroutine(EndAnimation());
     }
 

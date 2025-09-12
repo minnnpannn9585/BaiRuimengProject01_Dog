@@ -10,5 +10,6 @@ public class Clickdog2 : MonoBehaviour
     private void OnMouseDown()
     {
         Dog3.SetActive(true);
+        this.gameObject.SetActive(false);
     }
 }

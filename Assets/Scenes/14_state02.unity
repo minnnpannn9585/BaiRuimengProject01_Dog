@@ -263,7 +263,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 2d09d42b7ccad8349b27a2d1688114be, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -584,7 +584,7 @@ GameObject:
   - component: {fileID: 949012051}
   - component: {fileID: 949012050}
   - component: {fileID: 949012049}
-  - component: {fileID: 949012048}
+  - component: {fileID: 949012052}
   m_Layer: 0
   m_Name: dog
   m_TagString: Untagged
@@ -592,19 +592,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &949012048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 949012047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 572b52e67affe624cb270b1d1c76b4b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: 15_state01
 --- !u!60 &949012049
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -785,6 +772,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &949012052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949012047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b1cc859664ce40ff87b58dd10282f38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: 15_state01
 --- !u!1 &1175875478
 GameObject:
   m_ObjectHideFlags: 0
