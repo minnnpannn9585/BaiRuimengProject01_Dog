@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Scene18Manager : MonoBehaviour
+public class Scene1Manager : MonoBehaviour
 {
     public GameObject Down;
 
@@ -10,7 +10,7 @@ public class Scene18Manager : MonoBehaviour
     private void OnMouseDown()
     {
         this.gameObject.SetActive(false);
-        Down.SetActive(true);
+    
     }
 
 }
