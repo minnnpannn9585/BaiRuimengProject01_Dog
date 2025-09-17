@@ -5,9 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class ClickObjToLoadLevel : MonoBehaviour
 {
-    public string sceneName;
     private void OnMouseDown()
     {
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

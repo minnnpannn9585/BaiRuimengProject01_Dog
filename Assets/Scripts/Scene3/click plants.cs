@@ -11,6 +11,6 @@ public class clickplants : MonoBehaviour
     {
         this.gameObject.SetActive(false);
 
- 
+        transform.parent.GetComponent<FinishPlants>().AddNumber();
     }
 }
