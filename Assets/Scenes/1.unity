@@ -573,7 +573,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 572b52e67affe624cb270b1d1c76b4b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 2
 --- !u!212 &1199781648
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1078,7 +1077,7 @@ GameObject:
   - component: {fileID: 1798349074}
   - component: {fileID: 1798349073}
   - component: {fileID: 1798349072}
-  - component: {fileID: 1798349071}
+  - component: {fileID: 1798349075}
   m_Layer: 0
   m_Name: fence3
   m_TagString: Untagged
@@ -1086,19 +1085,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1798349071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1798349070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 343006f920a27d94ca60d9729d9ffb62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Down: {fileID: 1199781646}
 --- !u!60 &1798349072
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1218,6 +1204,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1798349075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798349070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 343006f920a27d94ca60d9729d9ffb62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberFinish: 0
+  DuoCollider: {fileID: 1199781650}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
