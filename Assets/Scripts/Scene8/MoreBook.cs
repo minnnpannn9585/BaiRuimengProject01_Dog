@@ -8,10 +8,11 @@ public class MoreBook : MonoBehaviour
 {
     public GameObject[] books;
     int index = 0;
+    public bool canClick = false;
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && canClick)
         {
             if (index >= books.Length)
             {

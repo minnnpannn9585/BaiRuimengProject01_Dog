@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Finishwater : MonoBehaviour
+public class FinishWater : MonoBehaviour
 {
     public int numberFinish = 0;
-    public PolygonCollider2D waterCollider;
+    public GameObject water;
+    public GameObject loadNext;
 
     public void AddNumber()
     {
@@ -13,7 +14,8 @@ public class Finishwater : MonoBehaviour
 
         if (numberFinish == 4)
         {
-            waterCollider.enabled = true;
+            water.SetActive(true);
+            loadNext.SetActive(true);
         }
     }
 }

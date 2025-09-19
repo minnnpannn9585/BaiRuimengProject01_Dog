@@ -19,9 +19,11 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
+        print(111);
         index++;
         if (index >= dialogues.Length)
         {
+            print(222);
             index = 0;
             dialogueUI.SetActive(false);
             dialogues = new string[0];

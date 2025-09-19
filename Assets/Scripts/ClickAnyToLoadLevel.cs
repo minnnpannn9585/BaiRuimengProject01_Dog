@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class ClickAnyToLoadLevel : MonoBehaviour
 {
-    public string sceneName;
+    //public string sceneName;
     private float cd = 0.5f;
     
     private void Update()
@@ -14,7 +14,7 @@ public class ClickAnyToLoadLevel : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                SceneManager.LoadScene(sceneName);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
                 
         }
