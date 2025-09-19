@@ -20,7 +20,8 @@ public class PlayerController : MonoBehaviour
 {
     private GameObject currentTarget;   
     private int destroyedTargets = 0;   
-    public int totalTargets = 4;       
+    public int totalTargets = 4;
+    public GameObject water;
 
 
         private void OnMouseDown()
@@ -33,14 +34,15 @@ public class PlayerController : MonoBehaviour
 
                 if (destroyedTargets >= totalTargets)
                 {
-                    Destroy(gameObject); 
+                    Destroy(gameObject);
+                water.gameObject.SetActive(true);
                 }
             }
         }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Target"))
+        if (other.CompareTag("target"))
         {
             currentTarget = other.gameObject;
         }
@@ -49,10 +51,11 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Target") && other.gameObject == currentTarget)
+        if (other.CompareTag("target") && other.gameObject == currentTarget)
         {
             currentTarget = null;
         }
     }
+
 }
 
