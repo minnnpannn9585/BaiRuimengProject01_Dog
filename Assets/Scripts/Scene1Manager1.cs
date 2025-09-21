@@ -1,17 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class fence : MonoBehaviour
+public class Fence : MonoBehaviour
 {
+    bool firstTime = true;
     public int numberFinish = 0;
     public PolygonCollider2D DuoCollider;
+    public DialogueManager dm;
+    public string[] dialogues;
 
 
     private void OnMouseDown()
     {
+        if (firstTime)
+        {
+            dm.dialogues = dialogues;
+            dm.StartDialogue();
+            StartCoroutine(TurnOffSwitch());
+        }
         this.gameObject.SetActive(false);
-
+        dm.dialogues = dialogues;
+        dm.StartDialogue();
+        StartCoroutine(TurnOffSwitch());
     }
 
     public void AddNumber()
@@ -21,6 +33,13 @@ public class fence : MonoBehaviour
         if (numberFinish == 1)
         {
             DuoCollider.enabled = true;
+
         }
+    }
+    IEnumerator TurnOffSwitch()
+    {
+        yield return new WaitForSeconds(2f);
+        firstTime = false;
+        GetComponent<PolygonCollider2D>().enabled = true;
     }
 }

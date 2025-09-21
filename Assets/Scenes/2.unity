@@ -1083,6 +1083,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2881184862958010998, guid: befbed8d158017a44bc7ca1dc795634f, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2881184862958010998, guid: befbed8d158017a44bc7ca1dc795634f, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 97f74aba0b8c4c049b5a9d7be1373ba1, type: 3}
     - target: {fileID: 5246348678123559899, guid: befbed8d158017a44bc7ca1dc795634f, type: 3}
       propertyPath: m_CullTransparentMesh
       value: 1
@@ -1315,7 +1323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dm: {fileID: 262276166}
   sceneStartDialogues:
-  - "\u8FD9\u4E2A\u72D7\u597D\u6D3B\u6CFC"
+  - "\u4ED6\u5F88\u559C\u6B22\u5728\u623F\u95F4\u91CC\u8DD1\u5708"
 --- !u!4 &862874075
 Transform:
   m_ObjectHideFlags: 0
@@ -2084,6 +2092,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cookieGame: {fileID: 250172625}
+  dm: {fileID: 262276166}
+  dialogues:
+  - "\u4ED6\u5F88\u559C\u6B22\u95FB\u6765\u95FB\u53BB"
 --- !u!1 &1361994375
 GameObject:
   m_ObjectHideFlags: 0
@@ -2478,8 +2489,8 @@ MonoBehaviour:
   back: {fileID: 285232678}
   dm: {fileID: 262276166}
   dialogues:
-  - "\u8FD9\u4E2A\u72D7\u75AF\u4E86"
-  - "\u8FD9\u4E2A\u72D7\u8DD1\u9633\u53F0\u53BB\u4E86"
+  - "\u5728\u697C\u4E0B\u6709\u8F66\u7ECF\u8FC7\u7684\u65F6\u5019\u4ECE\u9633\u53F0\u7684\u680F\u6746\u63A2\u51FA\u5934\u53BB\u4E00\u63A2\u7A76\u7ADF"
+  - "\u53C8\u6216\u8005\u5728\u5730\u4E0A\u6253\u6EDA"
 --- !u!1001 &1559843447
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2871,7 +2882,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 0983fdcdf16490c479a83917a081a531, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

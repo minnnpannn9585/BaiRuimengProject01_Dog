@@ -6,6 +6,8 @@ public class DogRoll : MonoBehaviour
 {
     bool firstTime = true;
     public GameObject cookieGame;
+    public DialogueManager dm;
+    public string[] dialogues;
 
     private void OnMouseDown()
     {
@@ -18,6 +20,10 @@ public class DogRoll : MonoBehaviour
         {
             cookieGame.SetActive(true);
             Destroy(gameObject);
+
+
+            dm.dialogues = dialogues;
+            dm.StartDialogue();
         }
         
     }
