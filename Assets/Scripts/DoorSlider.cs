@@ -82,4 +82,6 @@ public class DoorSlider : MonoBehaviour
             win = false;
         }
     }
+    
+    
 }

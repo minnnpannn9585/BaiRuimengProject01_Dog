@@ -8,8 +8,8 @@ public class SceneManager01 : MonoBehaviour
     public string[] sceneStartDialogues;
     void Start()
     {
-        dm.dialogues = sceneStartDialogues;
-        dm.StartDialogue();
+        //dm.dialogues = sceneStartDialogues;
+        //dm.StartDialogue();
     }
 
 

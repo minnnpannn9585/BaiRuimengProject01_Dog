@@ -6,11 +6,16 @@ public class DogRoll : MonoBehaviour
 {
     bool firstTime = true;
     public GameObject cookieGame;
-    public DialogueManager dm;
+    
     public string[] dialogues;
 
     private void OnMouseDown()
     {
+        if (DialogueManager.Instance.inDialogue)
+        {
+            return;
+        }
+        
         if (firstTime)
         {
             GetComponent<Animator>().SetTrigger("roll");
@@ -19,11 +24,13 @@ public class DogRoll : MonoBehaviour
         else
         {
             cookieGame.SetActive(true);
-            Destroy(gameObject);
+            
 
 
-            dm.dialogues = dialogues;
-            dm.StartDialogue();
+            DialogueManager.Instance.dialogues = dialogues;
+            DialogueManager.Instance.StartDialogue();
+            
+            this.gameObject.SetActive(false);
         }
         
     }

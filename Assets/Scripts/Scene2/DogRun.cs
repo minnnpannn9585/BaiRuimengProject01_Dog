@@ -6,25 +6,33 @@ public class DogRun : MonoBehaviour
 {
     bool firstTime = true;
     public GameObject back;
-    public DialogueManager dm;
+    
     public string[] dialogues;
 
 
     private void OnMouseDown()
     {
+        if (DialogueManager.Instance.inDialogue)
+        {
+            return;
+        }
         if (firstTime)
         {
             GetComponent<Animator>().SetTrigger("RUN");
             GetComponent<PolygonCollider2D>().enabled = false;
             StartCoroutine(TurnOffSwitch());
+            //firstTime = false;
+            //GetComponent<PolygonCollider2D>().enabled = true;
         }
         else
         {
-            this.gameObject.SetActive(false);
             back.SetActive(true);
 
-            dm.dialogues = dialogues;
-            dm.StartDialogue();
+            DialogueManager.Instance.dialogues = dialogues;
+            DialogueManager.Instance.StartDialogue();
+            
+            this.gameObject.SetActive(false);
+            
 
         }
 

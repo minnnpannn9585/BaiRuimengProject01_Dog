@@ -30,6 +30,9 @@ public class CupBefore : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if(DialogueManager.Instance.inDialogue)
+            return;
+        
         cookie.SetActive(false);
         for(int i = 0; i < newCups.Length; i++)
         {
@@ -41,11 +44,15 @@ public class CupBefore : MonoBehaviour
 
     void OnMouseEnter()
     {
+        if(DialogueManager.Instance.inDialogue)
+            return;
         StartScale(hoverScale);
     }
 
     void OnMouseExit()
     {
+        if(DialogueManager.Instance.inDialogue)
+            return;
         StartScale(normalScale);
     }
 

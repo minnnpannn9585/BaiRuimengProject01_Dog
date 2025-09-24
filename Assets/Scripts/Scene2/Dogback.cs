@@ -10,6 +10,11 @@ public class clickback : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (DialogueManager.Instance.inDialogue)
+        {
+            return;
+        }
+        
         this.gameObject.SetActive(false);
         roll.SetActive(true);
        

@@ -7,6 +7,7 @@ public class ClickObjToLoadLevel : MonoBehaviour
 {
     private void OnMouseDown()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if(!DialogueManager.Instance.inDialogue)
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

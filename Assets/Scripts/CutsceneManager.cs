@@ -1,21 +1,32 @@
-﻿using System.Collections;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class StoryTextPlay1 : MonoBehaviour
+public class CutsceneManager : MonoBehaviour
 {
+    [HideInInspector]
     public Text dialogueText; // 拖拽UI上的Text组件
+    
     public List<string> sentences; // 需要显示的句子
     public float fadeDuration = 1f; // 渐隐渐显时间
     public float displayDuration = 1.5f; // 每句话停留时间
-    public Clickfence Fence;
+
+    private void Awake()
+    {
+        dialogueText = transform.GetChild(1).GetComponent<Text>();
+    }
+
     private void Start()
     {
         StartCoroutine(PlayDialogue());
     }
+    
     IEnumerator PlayDialogue()
     {
+        
         foreach (var sentence in sentences)
         {
             // 先设置文本内容，并将alpha设为0
@@ -30,8 +41,9 @@ public class StoryTextPlay1 : MonoBehaviour
             yield return StartCoroutine(FadeText(1, 0));
         }
         dialogueText.text = "";
-        Fence.canClick=true;
-        gameObject.SetActive(false);
+        
+        //gameObject.SetActive(false);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     IEnumerator FadeText(float fromAlpha, float toAlpha)
