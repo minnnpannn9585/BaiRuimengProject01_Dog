@@ -16,7 +16,7 @@ public class DialogueManager : MonoBehaviour
     public int index;
     [HideInInspector]
     public string[] dialogues;
-    
+    [HideInInspector]
     public bool inDialogue = false;
 
     private void Awake()
@@ -30,16 +30,30 @@ public class DialogueManager : MonoBehaviour
 
     private void Start()
     {
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
         dialogueUI = transform.GetChild(0).gameObject;
-        dialogueText = transform.GetChild(0).GetChild(0).GetComponent<Text>();
+        dialogueText = transform.GetChild(0).GetComponent<Text>();
+    }
+
+    private void Update()
+    {
+        if(inDialogue && Input.GetMouseButtonDown(0))
+        {
+            DisplayNextSentence();
+        }
     }
 
     public void StartDialogue()
     {
-        dialogueUI.SetActive(true); // Show the dialogue UI
+        dialogueUI.SetActive(true);
         index = 0;
         dialogueText.text = dialogues[index];
+        StartCoroutine(EnableDialogueNextFrame());
+    }
+
+    private IEnumerator EnableDialogueNextFrame()
+    {
+        yield return null;
         inDialogue = true;
     }
 

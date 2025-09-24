@@ -5,12 +5,12 @@ using UnityEngine;
 public class SceneManager03 : MonoBehaviour
 
 {
-    public DialogueManager dm;
+
     public string[] sceneStartDialogues;
     void Start()
     {
-        dm.dialogues = sceneStartDialogues;
-        dm.StartDialogue();
+        DialogueManager.Instance.dialogues = sceneStartDialogues;
+        DialogueManager.Instance.StartDialogue();
     }
 
 
