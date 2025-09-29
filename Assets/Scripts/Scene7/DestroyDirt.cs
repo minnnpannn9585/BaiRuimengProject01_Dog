@@ -9,6 +9,10 @@ public class DestroyDirt : MonoBehaviour
     public clickshowerhead clickshowerhead;
     private void OnMouseDown()
     {
+        if(DialogueManager.Instance.inDialogue)
+        {
+            return;
+        }
         if (clickshowerhead.isClicked)
         {
             this.gameObject.SetActive(false);

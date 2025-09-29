@@ -20,7 +20,7 @@ public class Scene10Manager : MonoBehaviour
                 //{
                 //    score.SetActive(false);
                 //}
-                SceneManager.LoadScene("11");
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 return;
             }
             score[index].SetActive(true);

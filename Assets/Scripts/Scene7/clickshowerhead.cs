@@ -11,6 +11,11 @@ public class clickshowerhead : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (DialogueManager.Instance.inDialogue)
+        {
+            return;
+        }
+
         showerhead.SetActive(true);
         isClicked = true;
 

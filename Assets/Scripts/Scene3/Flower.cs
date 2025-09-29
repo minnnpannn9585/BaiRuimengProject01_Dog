@@ -20,6 +20,10 @@ public class Flower : MonoBehaviour
 
     void Update()
     {
+        if (DialogueManager.Instance.inDialogue)
+        {
+            return;
+        }
         if (Input.GetMouseButtonDown(0) && !hasClicked)
         {
             hasClicked = true;
