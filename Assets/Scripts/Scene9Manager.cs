@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class Scene9Manager : MonoBehaviour
 {
+   
+
     public GameObject[] busy;
     int index = 1;
 
@@ -13,6 +15,8 @@ public class Scene9Manager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            
+
             if (index >= busy.Length)
             {
                 index = 0;
@@ -22,6 +26,8 @@ public class Scene9Manager : MonoBehaviour
                 //}
                 SceneManager.LoadScene("10");
                 return;
+
+               
             }
             ShowPicture(index);
             index++;
@@ -35,5 +41,6 @@ public class Scene9Manager : MonoBehaviour
             busy.SetActive(false);
         }
         busy[i].SetActive(true);
+        
     }
 }

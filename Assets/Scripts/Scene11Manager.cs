@@ -20,7 +20,7 @@ public class Scene11Manager : MonoBehaviour
 
     IEnumerator LoadNextScene()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         SceneManager.LoadScene("12_state01");
     }
 }

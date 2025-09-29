@@ -6,25 +6,25 @@ public class Dogroll : MonoBehaviour
 {
     bool firstTime = true;
     public GameObject back;
-    public DialogueManager dm;
+
     public string[] dialogues;
 
 
     private void OnMouseDown()
     {
-        if (firstTime)
+        if (!firstTime)
+        {
+
+            DialogueManager.Instance.dialogues = dialogues;
+            DialogueManager.Instance.StartDialogue();
+            back.SetActive(true);
+            Destroy(gameObject);
+        }
+        else
         {
             GetComponent<Animator>().SetTrigger("roll2");
             firstTime = false;
             StartCoroutine(TurnOffSwitch());
-        }
-        else
-        {
-            back.SetActive(true);
-            Destroy(gameObject);
-
-            dm.dialogues = dialogues;
-            dm.StartDialogue();
         }
 
     }

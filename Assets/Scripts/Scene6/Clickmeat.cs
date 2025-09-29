@@ -1,19 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class clickmeat : MonoBehaviour
 {
     public int numberFinish = 0;
-    public PolygonCollider2D bowlCollider;
+    public int totalMeat = 5;
 
+
+    public string nextSceneName = "NextScene";
     public void AddNumber()
     {
         numberFinish++;
 
-        if (numberFinish == 5)
+        if (numberFinish >= totalMeat)
         {
-            bowlCollider.enabled = true;
+
+            SceneManager.LoadScene(nextSceneName);
         }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class DogRun : MonoBehaviour
 {
     bool firstTime = true;
-    public GameObject back;
+    public GameObject crawl;
     
     public string[] dialogues;
 
@@ -21,12 +21,10 @@ public class DogRun : MonoBehaviour
             GetComponent<Animator>().SetTrigger("RUN");
             GetComponent<PolygonCollider2D>().enabled = false;
             StartCoroutine(TurnOffSwitch());
-            //firstTime = false;
-            //GetComponent<PolygonCollider2D>().enabled = true;
         }
         else
         {
-            back.SetActive(true);
+            crawl.SetActive(true);
 
             DialogueManager.Instance.dialogues = dialogues;
             DialogueManager.Instance.StartDialogue();
