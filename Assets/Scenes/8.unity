@@ -1066,7 +1066,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 566679072}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &453266061
@@ -1375,7 +1376,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 397901725}
     m_Modifications:
     - target: {fileID: 6956212796677399827, guid: befbed8d158017a44bc7ca1dc795634f, type: 3}
       propertyPath: m_Pivot.x
@@ -1466,6 +1467,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: befbed8d158017a44bc7ca1dc795634f, type: 3}
+--- !u!224 &566679072 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6956212796677399827, guid: befbed8d158017a44bc7ca1dc795634f, type: 3}
+  m_PrefabInstance: {fileID: 566679071}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &603062301
 GameObject:
   m_ObjectHideFlags: 0
@@ -3074,13 +3080,13 @@ MonoBehaviour:
   - {fileID: 283379882}
   canClick: 1
   dialogues01:
-  - 111
+  - "\u684C\u4E0A\u7684\u4E66\u8D8A\u5806\u8D8A\u9AD8"
   dialogues02:
-  - 222
+  - "\u5377\u5B50\u7684\u5206\u6570\u4E0A\u4E0A\u4E0B\u4E0B"
   dialogues03:
-  - 333
+  - "\u53F0\u706F\u4EAE\u7684\u65F6\u95F4\u8D8A\u6765\u8D8A\u957F"
   dialogues04:
-  - 444
+  - "\u800C\u6211\u4E00\u76F4\u8DB4\u5728\u684C\u524D\u4F4E\u7740\u5934"
 --- !u!4 &1715137729
 Transform:
   m_ObjectHideFlags: 0
@@ -3785,4 +3791,3 @@ SceneRoots:
   - {fileID: 1715137729}
   - {fileID: 1587455332}
   - {fileID: 397901725}
-  - {fileID: 566679071}

@@ -21,6 +21,6 @@ public class Scene11Manager : MonoBehaviour
     IEnumerator LoadNextScene()
     {
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene("12_state01");
+        SceneManager.LoadScene("12_state00");
     }
 }

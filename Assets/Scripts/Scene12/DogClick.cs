@@ -6,10 +6,14 @@ public class DogClick : MonoBehaviour
 {
     public GameObject photo;
 
+    public string[] dialogues;
+
     private void OnMouseDown()
     {
         transform.parent.GetComponent<Animator>().SetTrigger("walk");
         StartCoroutine(EndAnimation());
+        DialogueManager.Instance.dialogues = dialogues;
+        DialogueManager.Instance.StartDialogue();
     }
 
     IEnumerator EndAnimation()

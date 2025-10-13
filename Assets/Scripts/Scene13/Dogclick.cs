@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Dogclick : MonoBehaviour
 {
     public GameObject picturedog;
+
     private void OnMouseDown()
     {
         picturedog.SetActive(true);
