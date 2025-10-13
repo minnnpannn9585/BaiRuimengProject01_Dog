@@ -30,6 +30,10 @@ public class DoorSlider : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (DialogueManager.Instance.inDialogue)
+        {
+            return;
+        }
         if (isMoving)
         {
             if (toEnd)
@@ -59,6 +63,7 @@ public class DoorSlider : MonoBehaviour
             if (win)
             {
                 wintext.SetActive(true);
+				//switch dog image
             }
             else
             {
