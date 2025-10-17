@@ -18,6 +18,8 @@ public class DoorSlider : MonoBehaviour
     
     public Animator doorAnimator;
     public GameObject loadLevelObj;
+    public GameObject swimsuit;
+    public GameObject put;
     
     // Start is called before the first frame update
     void Start()
@@ -50,6 +52,8 @@ public class DoorSlider : MonoBehaviour
                 if (Vector3.Distance(transform.position, startPos.position) <= 0.21f)
                 {
                     toEnd = true;
+                    put.SetActive(true);
+                    swimsuit.SetActive(false);
                 }
             }
         }

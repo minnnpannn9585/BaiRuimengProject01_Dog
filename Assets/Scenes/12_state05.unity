@@ -1498,7 +1498,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &2050729187
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1596,10 +1596,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
-  - 111111
-  - 22222
-  - 33333
-  - 444
+  - "\u4ED6\u5174\u594B\u7684\u628A\u6CF3\u8863\u53FC\u5230\u6211\u7684\u623F\u95F4\u95E8\u53E3"
+  - "\u95E8\u5FAE\u5FAE\u6253\u5F00\u4E86\u4E00\u9053\u7F1D"
+  - "\u6211\u770B\u7740\u4ED6\u7684\u52A8\u4F5C\u6709\u4E9B\u7591\u60D1"
 --- !u!4 &2130892009
 Transform:
   m_ObjectHideFlags: 0
@@ -1672,6 +1671,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8352180361645018399, guid: 997162eb2a7c54553a4227e8e480dceb, type: 3}
+      propertyPath: put
+      value: 
+      objectReference: {fileID: 2050729186}
+    - target: {fileID: 8352180361645018399, guid: 997162eb2a7c54553a4227e8e480dceb, type: 3}
       propertyPath: wintext
       value: 
       objectReference: {fileID: 1152986587}
@@ -1679,6 +1682,10 @@ PrefabInstance:
       propertyPath: losetext
       value: 
       objectReference: {fileID: 1976858249}
+    - target: {fileID: 8352180361645018399, guid: 997162eb2a7c54553a4227e8e480dceb, type: 3}
+      propertyPath: swimsuit
+      value: 
+      objectReference: {fileID: 1617562926}
     - target: {fileID: 8352180361645018399, guid: 997162eb2a7c54553a4227e8e480dceb, type: 3}
       propertyPath: doorAnimator
       value: 
