@@ -9,6 +9,8 @@ public class ClickAnyToLoadLevel : MonoBehaviour
     
     private void Update()
     {
+        if(DialogueManager.Instance.inDialogue)
+            return;
         cd -= Time.deltaTime;
         if (cd <= 0)
         {

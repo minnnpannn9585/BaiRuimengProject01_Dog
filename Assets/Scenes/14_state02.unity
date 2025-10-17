@@ -283,12 +283,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 348155140}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.93, y: 0.93, z: 0.93}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 949012051}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &459447313
 GameObject:
@@ -629,6 +629,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7855532245297743910, guid: befbed8d158017a44bc7ca1dc795634f, type: 3}
+      propertyPath: hasStartDialogue
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9142464899153938839, guid: befbed8d158017a44bc7ca1dc795634f, type: 3}
       propertyPath: m_Name
       value: DialogueCanvas
@@ -732,7 +736,6 @@ GameObject:
   - component: {fileID: 949012051}
   - component: {fileID: 949012050}
   - component: {fileID: 949012049}
-  - component: {fileID: 949012052}
   m_Layer: 0
   m_Name: dog
   m_TagString: Untagged
@@ -917,21 +920,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.93, y: 0.93, z: 0.93}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 348155142}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &949012052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 949012047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b1cc859664ce40ff87b58dd10282f38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &992915584
 GameObject:
   m_ObjectHideFlags: 0
@@ -1722,6 +1714,7 @@ GameObject:
   - component: {fileID: 1624194339}
   - component: {fileID: 1624194338}
   - component: {fileID: 1624194337}
+  - component: {fileID: 1624194340}
   m_Layer: 0
   m_Name: door
   m_TagString: Untagged
@@ -1817,6 +1810,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1624194340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624194336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0270842072f4a4cf0a89c28106dcc56a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2097310093
 GameObject:
   m_ObjectHideFlags: 0
@@ -1987,7 +1992,6 @@ SceneRoots:
   - {fileID: 1471060480}
   - {fileID: 331876717}
   - {fileID: 634512899}
-  - {fileID: 348155142}
   - {fileID: 949012051}
   - {fileID: 459447315}
   - {fileID: 1175875480}

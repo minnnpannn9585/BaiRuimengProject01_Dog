@@ -18,6 +18,8 @@ public class DialogueManager : MonoBehaviour
     public string[] dialogues;
     [HideInInspector]
     public bool inDialogue = false;
+    
+    public bool hasStartDialogue;
 
     private void Awake()
     {
@@ -26,10 +28,21 @@ public class DialogueManager : MonoBehaviour
             return;
         }
         Instance = this;
+
+        if (hasStartDialogue)
+        {
+            inDialogue = true;
+        }
+        else
+        {
+            inDialogue = false;
+        }
+        
     }
 
     private void Start()
     {
+        
         //DontDestroyOnLoad(gameObject);
         dialogueUI = transform.GetChild(0).gameObject;
         dialogueText = transform.GetChild(0).GetComponent<Text>();
@@ -59,6 +72,7 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
+        
         index++;
         if (index >= dialogues.Length)
         {
