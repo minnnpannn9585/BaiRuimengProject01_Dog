@@ -10,6 +10,7 @@ public class Scene1Manager : MonoBehaviour
     private void OnMouseDown()
     {
         this.gameObject.SetActive(false);
+        Down.SetActive(true);
     
     }
 
