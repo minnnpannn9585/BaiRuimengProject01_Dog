@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Meat : MonoBehaviour
 {
-    private GameController controller;
+    private TimeManager controller;
 
     void Start()
     {
-        controller = FindObjectOfType<GameController>();
+        controller = FindObjectOfType<TimeManager>();
     }
 
     private void OnMouseDown()
