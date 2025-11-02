@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class Meat : MonoBehaviour
 {
+    private GameController controller;
+
+    void Start()
+    {
+        controller = FindObjectOfType<GameController>();
+    }
+
     private void OnMouseDown()
     {
-        FindObjectOfType<clickmeat>().AddNumber();
-        Destroy(gameObject);
+        controller.EatMeat(gameObject);
     }
 }
