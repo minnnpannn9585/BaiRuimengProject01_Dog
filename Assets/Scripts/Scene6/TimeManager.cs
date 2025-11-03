@@ -4,14 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class GameController : MonoBehaviour
+public class TimeManager : MonoBehaviour
 {
     public float timeLimit = 5f;        
     private float timeLeft;
 
     public Text timerText;              
     public Text resultText;             
-    public GameObject[] meats;          
+    public GameObject[] meats;
+    public GameObject retryBtn;
 
     private bool gameEnded = false;
 
@@ -66,10 +67,16 @@ public class GameController : MonoBehaviour
     {
         gameEnded = true;
         resultText.text = "You Fail!";
+        retryBtn.SetActive(true);
     }
 
     void NextScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void Retry()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
