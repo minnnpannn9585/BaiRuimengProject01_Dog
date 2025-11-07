@@ -1356,6 +1356,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1944463181 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4112518215176190786, guid: 997162eb2a7c54553a4227e8e480dceb, type: 3}
+  m_PrefabInstance: {fileID: 4690293854711496982}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1976858249
 GameObject:
   m_ObjectHideFlags: 0
@@ -1643,6 +1648,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2658467065968484185, guid: 997162eb2a7c54553a4227e8e480dceb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.65
+      objectReference: {fileID: 0}
     - target: {fileID: 3722604054729794015, guid: 997162eb2a7c54553a4227e8e480dceb, type: 3}
       propertyPath: m_Name
       value: slider
@@ -1696,6 +1705,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2050729186}
     - target: {fileID: 8352180361645018399, guid: 997162eb2a7c54553a4227e8e480dceb, type: 3}
+      propertyPath: speed
+      value: 6.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8352180361645018399, guid: 997162eb2a7c54553a4227e8e480dceb, type: 3}
       propertyPath: wintext
       value: 
       objectReference: {fileID: 1152986587}
@@ -1715,6 +1728,10 @@ PrefabInstance:
       propertyPath: loadLevelObj
       value: 
       objectReference: {fileID: 1661929544}
+    - target: {fileID: 8352180361645018399, guid: 997162eb2a7c54553a4227e8e480dceb, type: 3}
+      propertyPath: pointAnimator
+      value: 
+      objectReference: {fileID: 1944463181}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

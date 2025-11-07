@@ -7,13 +7,19 @@ public class Scene1204Manager : MonoBehaviour
 {
     public GameObject[] score;
     int index = 0;
+    public Collider2D clothCol;
 
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
+            if(index == score.Length - 1)
+            {
+                clothCol.enabled = true;
+            }
             if (index >= score.Length)
             {
+                
                 index = 0;
                
                 return;

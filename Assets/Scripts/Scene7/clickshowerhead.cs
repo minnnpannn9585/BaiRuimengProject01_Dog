@@ -16,11 +16,18 @@ public class clickshowerhead : MonoBehaviour
             return;
         }
 
+        if (!isClicked)
+        {
+            DialogueManager.Instance.dialogues = dialogues;
+            DialogueManager.Instance.StartDialogue();
+        }
+
+            
+
         showerhead.SetActive(true);
         isClicked = true;
 
-        DialogueManager.Instance.dialogues = dialogues;
-        DialogueManager.Instance.StartDialogue();
+        
     }
 
 }

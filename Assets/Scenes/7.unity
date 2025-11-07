@@ -594,7 +594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showerhead: {fileID: 1984214893}
-  isClicked: 1
+  isClicked: 0
   dialogues:
   - "\u6D17\u6FA1\u50CF\u662F\u4E00\u573A\u786C\u4ED7"
   - "\u85AF\u997C\u4F1A\u5F00\u5FC3\u7684\u94BB\u8FDB\u6D74\u5BA4"
