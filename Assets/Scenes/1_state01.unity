@@ -660,6 +660,7 @@ GameObject:
   - component: {fileID: 1199781648}
   - component: {fileID: 1199781650}
   - component: {fileID: 1199781647}
+  - component: {fileID: 1199781651}
   m_Layer: 0
   m_Name: duo
   m_TagString: Untagged
@@ -867,6 +868,19 @@ PolygonCollider2D:
       - {x: 1.52, y: -5.14}
       - {x: 1.5, y: -4.97}
   m_UseDelaunayMesh: 0
+--- !u!114 &1199781651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199781646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd3191bdd7374dc6af5aaba3712c668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverSprite: {fileID: 21300000, guid: 7836694e5cc3d0d4a9213cbc1e7eb243, type: 3}
 --- !u!1 &1645773941
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,6 +893,7 @@ GameObject:
   - component: {fileID: 1645773943}
   - component: {fileID: 1645773942}
   - component: {fileID: 1645773945}
+  - component: {fileID: 1645773946}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1004,6 +1019,18 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &1645773946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645773941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20bcd6297694b4a2b8bef33fa76207b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1677116958
 GameObject:
   m_ObjectHideFlags: 0
@@ -1184,6 +1211,7 @@ GameObject:
   - component: {fileID: 1798349073}
   - component: {fileID: 1798349072}
   - component: {fileID: 1798349075}
+  - component: {fileID: 1798349076}
   m_Layer: 0
   m_Name: fence3
   m_TagString: Untagged
@@ -1327,6 +1355,19 @@ MonoBehaviour:
   dialogues:
   - "\u4ED6\u7EE7\u627F\u4E86\u6211\u4EEC\u5BB6\u6700\u65E9\u90A3\u6761\u72D7\u7684\u540D\u5B57"
   - "\u591A\u591A"
+--- !u!114 &1798349076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798349070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd3191bdd7374dc6af5aaba3712c668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverSprite: {fileID: 21300000, guid: c296d4d7f6d29dd4a8c9d2de31ccfeca, type: 3}
 --- !u!1001 &3390170517283605057
 PrefabInstance:
   m_ObjectHideFlags: 0

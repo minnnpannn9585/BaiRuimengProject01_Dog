@@ -24,10 +24,19 @@ public class Clickfence : MonoBehaviour
             DialogueManager.Instance.StartDialogue();
             //StartCoroutine(TurnOffSwitch());
             firstTime = false;
-            duoCollider.enabled = true;
+            StartCoroutine("EnableDogNextNextFrame");
+
         }
-        this.gameObject.SetActive(false);
+        
       
+    }
+
+    IEnumerator EnableDogNextNextFrame()
+    {
+        yield return null;
+        yield return null;
+        duoCollider.enabled = true;
+        this.gameObject.SetActive(false);
     }
     
     IEnumerator TurnOffSwitch()

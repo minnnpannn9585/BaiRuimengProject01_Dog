@@ -58,6 +58,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue()
     {
+        //inDialogue = true;
         dialogueUI.SetActive(true);
         index = 0;
         dialogueText.text = dialogues[index];
