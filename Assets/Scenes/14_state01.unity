@@ -172,6 +172,7 @@ GameObject:
   - component: {fileID: 25621555}
   - component: {fileID: 25621557}
   - component: {fileID: 25621556}
+  - component: {fileID: 25621558}
   m_Layer: 0
   m_Name: 4
   m_TagString: Untagged
@@ -317,6 +318,19 @@ PolygonCollider2D:
       - {x: -6.62, y: -0.9}
       - {x: -6.69, y: -0.84}
   m_UseDelaunayMesh: 0
+--- !u!114 &25621558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25621553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd3191bdd7374dc6af5aaba3712c668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverSprite: {fileID: 21300000, guid: 67c66fa5e588e8a49a57493d4c779ce7, type: 3}
 --- !u!1001 &105974147
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1057,6 +1071,7 @@ GameObject:
   - component: {fileID: 540842023}
   - component: {fileID: 540842025}
   - component: {fileID: 540842024}
+  - component: {fileID: 540842026}
   m_Layer: 0
   m_Name: 3
   m_TagString: Untagged
@@ -1205,6 +1220,19 @@ PolygonCollider2D:
       - {x: -6.6099997, y: -3.53}
       - {x: -6.6099997, y: -2.34}
   m_UseDelaunayMesh: 0
+--- !u!114 &540842026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540842021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd3191bdd7374dc6af5aaba3712c668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverSprite: {fileID: 21300000, guid: 726438a30d6a7434981a934950012bf0, type: 3}
 --- !u!1 &655583984
 GameObject:
   m_ObjectHideFlags: 0
@@ -1827,6 +1855,7 @@ GameObject:
   - component: {fileID: 1311974535}
   - component: {fileID: 1311974537}
   - component: {fileID: 1311974536}
+  - component: {fileID: 1311974538}
   m_Layer: 0
   m_Name: 2
   m_TagString: Untagged
@@ -1981,6 +2010,19 @@ PolygonCollider2D:
       - {x: -6.58, y: 0.89}
       - {x: -6.58, y: 2.54}
   m_UseDelaunayMesh: 0
+--- !u!114 &1311974538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311974533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd3191bdd7374dc6af5aaba3712c668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverSprite: {fileID: 21300000, guid: 85143896f4f142340b9804b6af22f00f, type: 3}
 --- !u!1 &1332843377
 GameObject:
   m_ObjectHideFlags: 0
@@ -2576,6 +2618,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1950860711}
   - component: {fileID: 1950860710}
+  - component: {fileID: 1950860712}
   m_Layer: 0
   m_Name: cake1
   m_TagString: Untagged
@@ -2650,6 +2693,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1950860712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950860709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd3191bdd7374dc6af5aaba3712c668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverSprite: {fileID: 21300000, guid: 0f6e7378041b2cf46a7c3d6063ddffbc, type: 3}
 --- !u!1 &2012957438
 GameObject:
   m_ObjectHideFlags: 0
@@ -2662,6 +2718,7 @@ GameObject:
   - component: {fileID: 2012957440}
   - component: {fileID: 2012957439}
   - component: {fileID: 2012957442}
+  - component: {fileID: 2012957443}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2787,6 +2844,18 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &2012957443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012957438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20bcd6297694b4a2b8bef33fa76207b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2015524366
 GameObject:
   m_ObjectHideFlags: 0

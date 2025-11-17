@@ -545,6 +545,7 @@ GameObject:
   - component: {fileID: 776855309}
   - component: {fileID: 776855308}
   - component: {fileID: 776855311}
+  - component: {fileID: 776855312}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -670,6 +671,18 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &776855312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776855307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20bcd6297694b4a2b8bef33fa76207b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1014522412
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,6 +828,7 @@ GameObject:
   - component: {fileID: 1076051057}
   - component: {fileID: 1076051056}
   - component: {fileID: 1076051055}
+  - component: {fileID: 1076051058}
   m_Layer: 0
   m_Name: book1
   m_TagString: Untagged
@@ -1088,6 +1102,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1076051058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076051053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd3191bdd7374dc6af5aaba3712c668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverSprite: {fileID: 21300000, guid: c223ee9c53fe20046896e8e7c04ef24f, type: 3}
 --- !u!1 &1094511869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1270,6 +1297,7 @@ GameObject:
   - component: {fileID: 1612084276}
   - component: {fileID: 1612084275}
   - component: {fileID: 1612084277}
+  - component: {fileID: 1612084278}
   m_Layer: 0
   m_Name: book2
   m_TagString: Untagged
@@ -1454,6 +1482,19 @@ PolygonCollider2D:
       - {x: -5, y: -5.0099998}
       - {x: -4.92, y: -4.97}
   m_UseDelaunayMesh: 0
+--- !u!114 &1612084278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612084273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd3191bdd7374dc6af5aaba3712c668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverSprite: {fileID: 21300000, guid: f820e40040e5b5547904f0e3cbcecfd9, type: 3}
 --- !u!1 &1630700727
 GameObject:
   m_ObjectHideFlags: 0
@@ -1549,6 +1590,7 @@ GameObject:
   - component: {fileID: 1842981266}
   - component: {fileID: 1842981265}
   - component: {fileID: 1842981267}
+  - component: {fileID: 1842981268}
   m_Layer: 0
   m_Name: book5
   m_TagString: Untagged
@@ -1761,6 +1803,19 @@ PolygonCollider2D:
       - {x: 7.2999997, y: -4.25}
       - {x: 7.3999996, y: -4.14}
   m_UseDelaunayMesh: 0
+--- !u!114 &1842981268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842981263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd3191bdd7374dc6af5aaba3712c668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverSprite: {fileID: 21300000, guid: 29fa40c39e8ad984580086edcda20cc6, type: 3}
 --- !u!1 &1904652078
 GameObject:
   m_ObjectHideFlags: 0
@@ -1856,6 +1911,7 @@ GameObject:
   - component: {fileID: 1958598071}
   - component: {fileID: 1958598070}
   - component: {fileID: 1958598072}
+  - component: {fileID: 1958598073}
   m_Layer: 0
   m_Name: book4
   m_TagString: Untagged
@@ -2049,6 +2105,19 @@ PolygonCollider2D:
       - {x: 1.91, y: -5.2599998}
       - {x: 2.1299999, y: -5.0899997}
   m_UseDelaunayMesh: 0
+--- !u!114 &1958598073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958598068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd3191bdd7374dc6af5aaba3712c668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverSprite: {fileID: 21300000, guid: 35d7c899abc17a44192530bcff77dc15, type: 3}
 --- !u!1 &2080074422
 GameObject:
   m_ObjectHideFlags: 0
@@ -2144,6 +2213,7 @@ GameObject:
   - component: {fileID: 2104197915}
   - component: {fileID: 2104197914}
   - component: {fileID: 2104197916}
+  - component: {fileID: 2104197917}
   m_Layer: 0
   m_Name: book3
   m_TagString: Untagged
@@ -2327,6 +2397,19 @@ PolygonCollider2D:
       - {x: 8.559999, y: -4.7599998}
       - {x: 8.61, y: -4.68}
   m_UseDelaunayMesh: 0
+--- !u!114 &2104197917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104197912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd3191bdd7374dc6af5aaba3712c668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverSprite: {fileID: 21300000, guid: 03e529437de91ae4aa407651013bf5c0, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
