@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Callbacks;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DoorSlider : MonoBehaviour
 {
@@ -10,15 +12,14 @@ public class DoorSlider : MonoBehaviour
     public GameObject wintext;
     public GameObject losetext;
     
-    public Animator doorAnimator;
-    Animator pointAnimator;
+    Animator doorAnimator;
     public GameObject loadLevelObj;
     public GameObject swimsuit;
     public GameObject put;
 
     private void Awake()
     {
-        pointAnimator = GetComponent<Animator>();
+        doorAnimator = transform.parent.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -29,25 +30,33 @@ public class DoorSlider : MonoBehaviour
             return;
         }
 
-        pointAnimator.SetTrigger("StartSwing");
+        doorAnimator.SetTrigger("StartSwing");
 
 
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            loadLevelObj.SetActive(true);
-            pointAnimator.speed = 0;
+            
             doorAnimator.speed = 0;
             if (win)
             {
+                swimsuit.SetActive(false);
+                put.SetActive(true);
+                loadLevelObj.SetActive(true);
                 wintext.SetActive(true);
 				//switch dog image
             }
             else
             {
                 losetext.SetActive(true);
+                Invoke("ReloadScene", 1f);
             }
         }
+    }
+
+    void ReloadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

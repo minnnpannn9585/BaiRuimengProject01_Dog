@@ -37,16 +37,12 @@ public class DialogueManager : MonoBehaviour
         {
             inDialogue = false;
         }
-        
-    }
 
-    private void Start()
-    {
-        
-        //DontDestroyOnLoad(gameObject);
         dialogueUI = transform.GetChild(0).gameObject;
         dialogueText = transform.GetChild(0).GetComponent<Text>();
+
     }
+
 
     private void Update()
     {
