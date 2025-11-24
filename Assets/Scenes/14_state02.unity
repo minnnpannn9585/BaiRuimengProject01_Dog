@@ -451,7 +451,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &229879818
 Transform:
   m_ObjectHideFlags: 0
@@ -895,7 +895,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &498591788
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2041,7 +2041,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1332843378
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2540,7 +2540,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1882605853
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3038,8 +3038,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bf0d6d2ce8274327a087aa6e31c415d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dog4: {fileID: 1882605852}
-  cake: {fileID: 498591787}
 --- !u!60 &2073915114
 PolygonCollider2D:
   m_ObjectHideFlags: 0

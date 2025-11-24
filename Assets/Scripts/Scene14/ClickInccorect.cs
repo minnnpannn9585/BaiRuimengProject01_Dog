@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class ClickInccorect : MonoBehaviour
 {
-    public Text messageText;
+
     public GameObject wrong;
 
     private void OnMouseDown()
     {
-            messageText.text = "Incorrect";
+        wrong.SetActive(true);
 
     }
 }

@@ -1,13 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ClickCorrect : MonoBehaviour
 {
-    public GameObject green;
+    public GameObject correctText;
 
     private void OnMouseDown()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("14_state02");
+        correctText.SetActive(true);
+        
+        Invoke("LoadNext", 2f);
+    }
+
+    void LoadNext()
+    {
+        SceneManager.LoadScene("14_state02");
     }
 }
