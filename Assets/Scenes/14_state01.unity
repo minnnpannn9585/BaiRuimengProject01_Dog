@@ -1650,6 +1650,7 @@ GameObject:
   - component: {fileID: 1206243216}
   - component: {fileID: 1206243219}
   - component: {fileID: 1206243218}
+  - component: {fileID: 1206243220}
   m_Layer: 0
   m_Name: dog2
   m_TagString: Untagged
@@ -1843,6 +1844,19 @@ PolygonCollider2D:
       - {x: -3.33, y: -3.87}
       - {x: -3.32, y: -3.54}
   m_UseDelaunayMesh: 0
+--- !u!114 &1206243220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206243215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd3191bdd7374dc6af5aaba3712c668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverSprite: {fileID: 21300000, guid: 0c14135685712e84797d4d7b4830e080, type: 3}
 --- !u!1 &1311974533
 GameObject:
   m_ObjectHideFlags: 0
@@ -2035,6 +2049,7 @@ GameObject:
   - component: {fileID: 1332843378}
   - component: {fileID: 1332843381}
   - component: {fileID: 1332843380}
+  - component: {fileID: 1332843382}
   m_Layer: 0
   m_Name: dog1
   m_TagString: Untagged
@@ -2237,6 +2252,19 @@ PolygonCollider2D:
       - {x: 7.6299996, y: -4.37}
       - {x: 7.77, y: -4.29}
   m_UseDelaunayMesh: 0
+--- !u!114 &1332843382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332843377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd3191bdd7374dc6af5aaba3712c668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverSprite: {fileID: 21300000, guid: 64b19ce4ea86ba84db2875322fec9fb8, type: 3}
 --- !u!1 &1386946933
 GameObject:
   m_ObjectHideFlags: 0
@@ -2952,6 +2980,7 @@ GameObject:
   - component: {fileID: 2073915111}
   - component: {fileID: 2073915114}
   - component: {fileID: 2073915113}
+  - component: {fileID: 2073915115}
   m_Layer: 0
   m_Name: dog3
   m_TagString: Untagged
@@ -3038,8 +3067,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bf0d6d2ce8274327a087aa6e31c415d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dog4: {fileID: 1882605852}
-  cake: {fileID: 498591787}
 --- !u!60 &2073915114
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3145,6 +3172,19 @@ PolygonCollider2D:
       - {x: -5.2, y: -0.90999997}
       - {x: -5.2, y: -0.65}
   m_UseDelaunayMesh: 0
+--- !u!114 &2073915115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073915110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd3191bdd7374dc6af5aaba3712c668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverSprite: {fileID: 21300000, guid: 0911ec338d0ac79438069f75fdd35e90, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 39831254}
   - component: {fileID: 39831255}
   - component: {fileID: 39831253}
+  - component: {fileID: 39831256}
   m_Layer: 0
   m_Name: roll1
   m_TagString: Untagged
@@ -359,6 +360,19 @@ PolygonCollider2D:
       - {x: 7.7, y: -5.19}
       - {x: 7.71, y: -5.06}
   m_UseDelaunayMesh: 0
+--- !u!114 &39831256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39831250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd3191bdd7374dc6af5aaba3712c668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverSprite: {fileID: 21300000, guid: 81414907368208941a73e88c74093a5e, type: 3}
 --- !u!1001 &287888208
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -828,6 +842,7 @@ GameObject:
   - component: {fileID: 968439571}
   - component: {fileID: 968439574}
   - component: {fileID: 968439573}
+  - component: {fileID: 968439575}
   m_Layer: 0
   m_Name: back
   m_TagString: Untagged
@@ -1017,6 +1032,19 @@ PolygonCollider2D:
       - {x: 0.01, y: 0.69}
       - {x: 0.03, y: 0.95}
   m_UseDelaunayMesh: 0
+--- !u!114 &968439575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968439570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd3191bdd7374dc6af5aaba3712c668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverSprite: {fileID: 21300000, guid: fbbda190e18f8ed47841f5912acf4455, type: 3}
 --- !u!1 &986586303
 GameObject:
   m_ObjectHideFlags: 0
@@ -1029,6 +1057,7 @@ GameObject:
   - component: {fileID: 986586304}
   - component: {fileID: 986586307}
   - component: {fileID: 986586306}
+  - component: {fileID: 986586308}
   m_Layer: 0
   m_Name: crawl
   m_TagString: Untagged
@@ -1284,6 +1313,19 @@ PolygonCollider2D:
       - {x: 0.255, y: -1.8449999}
       - {x: 0.375, y: -1.5849999}
   m_UseDelaunayMesh: 0
+--- !u!114 &986586308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986586303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd3191bdd7374dc6af5aaba3712c668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverSprite: {fileID: 21300000, guid: c554225191480ab4eb26cf88c2ad97da, type: 3}
 --- !u!1 &1151782082
 GameObject:
   m_ObjectHideFlags: 0
@@ -1616,6 +1658,7 @@ GameObject:
   - component: {fileID: 1420436312}
   - component: {fileID: 1420436315}
   - component: {fileID: 1420436316}
+  - component: {fileID: 1420436317}
   m_Layer: 0
   m_Name: smell
   m_TagString: Untagged
@@ -1849,6 +1892,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dog: {fileID: 986586303}
+--- !u!114 &1420436317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420436311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd3191bdd7374dc6af5aaba3712c668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverSprite: {fileID: 21300000, guid: 446c876b0e302274e89ea15049337e80, type: 3}
 --- !u!1 &1672903639
 GameObject:
   m_ObjectHideFlags: 0
@@ -2113,6 +2169,7 @@ GameObject:
   - component: {fileID: 2051251056}
   - component: {fileID: 2051251055}
   - component: {fileID: 2051251058}
+  - component: {fileID: 2051251059}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2238,6 +2295,18 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &2051251059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051251054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20bcd6297694b4a2b8bef33fa76207b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2060339906
 GameObject:
   m_ObjectHideFlags: 0

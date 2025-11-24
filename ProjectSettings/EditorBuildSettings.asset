@@ -102,8 +102,11 @@ EditorBuildSettings:
     path: Assets/Scenes/14_state01.unity
     guid: 3c237e4ef5c7d1140a6910fccd74812d
   - enabled: 1
-    path: Assets/Scenes/14_state02.unity
+    path: Assets/Scenes/14_state01cake.unity
     guid: 671082daef1892e4a96a926cba313601
+  - enabled: 1
+    path: Assets/Scenes/14_state02.unity
+    guid: dc8ee0a554cb79d4babdd66d48860fa4
   - enabled: 1
     path: Assets/Scenes/14_state03.unity
     guid: 40461a658de9c894fb64b243ca8c71a4

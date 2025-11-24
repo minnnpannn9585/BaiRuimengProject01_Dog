@@ -5,13 +5,8 @@ using UnityEngine;
 
 public class ClickDog3 : MonoBehaviour
 {
-    public GameObject dog4;
-    public GameObject cake;
-
     private void OnMouseDown()
     {
-        dog4.SetActive(true);
-        cake.SetActive(true);
-        this.gameObject.SetActive(false);   
+        UnityEngine.SceneManagement.SceneManager.LoadScene("14_state01cake");
     }
 }
